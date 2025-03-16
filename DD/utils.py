@@ -44,11 +44,21 @@ def load_normalizer(data_folder, resolution):
     t1 = default_timer()
     if resolution == 65:
         train_path = '{}/Data_65_Dd_30kto40k.mat'.format(data_folder)
+        data = MatRead(train_path)
+        train_a, train_u, train_ux, _ = data.get_data()
     elif resolution == 129:
-        train_path = '{}/Data_129_Dd_20kto30k.mat'.format(data_folder)
-    data = MatRead(train_path)
-    train_a, train_u, train_ux, _ = data.get_data()
-
+        train_path = '{}/Data_129_Dd_20kto30k_part0.mat'.format(data_folder)
+        data = MatRead(train_path)
+        train_a, train_u, train_ux, _ = data.get_data()
+        train_path = '{}/Data_129_Dd_20kto30k_part1.mat'.format(data_folder)
+        data = MatRead(train_path)
+        train_a1, train_u1, train_ux1, _ = data.get_data()
+        train_a = torch.cat((train_a, train_a1), dim=0)
+        train_u = torch.cat((train_u, train_u1), dim=0)
+        train_ux = torch.cat((train_ux, train_ux1), dim=0)
+    else:
+        raise ValueError('Resolution not supported')
+    
     a_normalizer = MaxMinNormalizer(train_a)
     u_normalizer = MaxMinNormalizer(train_u)
     ux_normalizer = MaxMinNormalizer(train_ux[:,:,2:-2,2:-2])
