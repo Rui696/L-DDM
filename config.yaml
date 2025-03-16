@@ -1,0 +1,20 @@
+niter: 100
+predict_ux : True
+
+saved_name_u: 'u-k3-res129-e500'
+saved_name_ux: 'ux-k3-res129-e500'
+base_kernel: 3
+trained_epoch: 500
+data_dir: 'Data'
+ckpt_dir: 'Checkpoints'
+
+Nx: 10
+Ny: 10
+boundary_type: 'rand' # 'const' #
+resolution: 129 # 65 #
+overlap_ratio: 0.3125
+nsamples: 1
+
+eval_batch: 10
+
+out_every: 1
