@@ -14,6 +14,10 @@ Official code for the paper *"A Learning-based Domain Decomposition Method"*, pu
   <img src="Examples/show.gif" alt="L-DDM Method Overview" width="90%"/>
 </p>
 
+<p align="center">
+  <img src="Examples/loss.gif" alt="L-DDM Method Overview" width="90%"/>
+</p>
+
 ## Overview
 
 Can neural operators scale to arbitrary complex geometries — without retraining? **L-DDM** does this by pretraining a neural operator once on a simple canonical domain, then reusing it as a universal local solver inside a classical **(parallel) additive Schwarz** domain decomposition loop.
