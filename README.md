@@ -15,7 +15,11 @@ Official code for the paper *"A Learning-based Domain Decomposition Method"*, pu
 </p>
 
 <p align="center">
-  <img src="Examples/loss.gif" alt="L-DDM Method Overview" width="90%"/>
+  <img src="Examples/Animation-u.gif" alt="L-DDM Method Overview" width="90%"/>
+</p>
+
+<p align="center">
+  <img src="Examples/Animation-ux.gif" alt="L-DDM Method Overview" width="90%"/>
 </p>
 
 ## Overview
