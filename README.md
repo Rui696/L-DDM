@@ -9,17 +9,14 @@ Official code for the paper *"A Learning-based Domain Decomposition Method"*, pu
 
 ---
 
-<!-- TODO: Replace with your method overview figure -->
 <p align="center">
-  <img src="Examples/show.gif" alt="L-DDM Method Overview" width="90%"/>
+  <img src="Examples/show.gif" alt="L-DDM method overview" width="90%"/>
 </p>
-
 <p align="center">
-  <img src="Examples/Animation-u.gif" alt="L-DDM Method Overview" width="90%"/>
+  <img src="Examples/Animation-u.gif" alt="Solution field u convergence" width="90%"/>
 </p>
-
 <p align="center">
-  <img src="Examples/Animation-ux.gif" alt="L-DDM Method Overview" width="90%"/>
+  <img src="Examples/Animation-ux.gif" alt="Derivative field du/dx convergence" width="90%"/>
 </p>
 
 ## Overview
