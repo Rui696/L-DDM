@@ -5,7 +5,7 @@
 
 Official code for the paper *"A Learning-based Domain Decomposition Method"*, published in **Computer Methods in Applied Mechanics and Engineering (CMAME)**.
 
-**[Rui Wu](https://github.com/Rui696), Nikola Kovachki, Burigede Liu.**
+**[Rui Wu](https://github.com/Rui696), [Nikola Kovachki](https://scholar.google.com/citations?user=redLUcgAAAAJ&hl=en), [Burigede Liu](https://scholar.google.com/citations?user=GMKw0g8AAAAJ&hl=en).**
 
 ---
 
